@@ -1,0 +1,66 @@
+@import "globals.scss";
+
+.body {
+  background-image: url(../public/image/lockBack.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+  scroll-behavior: smooth;
+}
+
+.leftBack {
+  width: 300px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 0;
+}
+
+.header {
+  height: 100%;
+  padding: 20px 20px 30px 20px;
+  position: fixed;
+  color: $white;
+  z-index: 99;
+  &_line {
+    position: absolute;
+    margin-left: 100px;
+    width: 2px;
+    height: 270px;
+    background-color: $white;
+    top: 50px;
+    left: -43px;
+  }
+  ul {
+    li {
+      font-size: 35px;
+      padding: 5px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      display: flex;
+      a {
+        display: flex;
+      }
+      p {
+        display: block;
+        font-size: 25px;
+        margin: 0 20px 0 20px;
+        padding: 5px 0;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $black;
+  color: $white;
+  text-align: center;
+  &_thank {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 50px;
+  }
+  &_copy {
+    padding-bottom: 30px;
+  }
+}
